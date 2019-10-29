@@ -45,5 +45,6 @@
     --darkgrey: hsl(200 10% 75%);
     --offblack: hsl(200 10% 80%);
     --black: hsl(200 10% 90%);
+    --black-a50: hsla(0 0% 0% / 90%);
   }
 }
