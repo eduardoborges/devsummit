@@ -3,13 +3,13 @@
 
 <section>
   <form class="{% className css, 'root' %}">
-    <label class="{% className css, 'label' %}">
+    <label class="{% className css, 'label' %} js-venue-time">
       <input name="timezone" type="radio" class="{% className css, 'radio' %}" checked>
       <span class="{% className css, 'fake-label' %}">
         <span>Venue time <span class="{% className css, 'zone' %}">(UTC<span class="js-zone"></span>)</span></span>
       </span>
     </label>
-    <label class="{% className css, 'label' %}">
+    <label class="{% className css, 'label' %} js-your-time">
       <input name="timezone" type="radio" class="{% className css, 'radio' %}">
       <span class="{% className css, 'fake-label' %}">
         <span>Your time <span class="{% className css, 'zone' %}">(UTC<span class="js-zone"></span>)</span></span>
