@@ -1,0 +1,5 @@
+:root {
+  --hueless-shadow: 0 9px 8px -7px var(--black-a50);
+  --lg-hueless-shadow: 0 55px 110px -2rem var(--black-a50);
+  --blue-shadow: 0 9px 8px -7px var(--blue-a50);
+}

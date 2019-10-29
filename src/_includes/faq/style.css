@@ -27,7 +27,7 @@
   background: var(--white);
   overflow: hidden;
   border-radius: 1rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.13);
+  box-shadow: var(--hueless-shadow);
   border: 1px solid var(--lessdarkoffwhite);
   padding: 0 1.6rem;
   margin: 2rem 0;

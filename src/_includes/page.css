@@ -50,7 +50,7 @@
     margin: 0;
     background: var(--white);
     padding: 1.6rem 1.8rem;
-    box-shadow: 0 55px 99px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--lg-hueless-shadow);
     border: 1px solid var(--lessdarkoffwhite);
     border-radius: 1rem;
 

@@ -4,6 +4,7 @@ title: What are the registration terms & conditions?
 
 - Each individual may reserve only one ticket, which allows admission to both days of the event.
 - You may not register on behalf of anyone else.
+- You may register under only one name and use only one email address. Your registration name must exactly match your government-issued ID.
 - Chrome Dev Summit tickets must be used by the original registrant and are non transferable.
 - By registering and accepting any discounts, gifts, or items of value related to Chrome Dev Summit, you certify that you are able to do so in compliance with applicable laws and your own organization’s code of conduct.
 - Tickets may not be sold, bartered, auctioned, or transferred in any way and doing so may result in Google rendering the ticket null and void, without any responsibility to Google.

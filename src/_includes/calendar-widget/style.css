@@ -10,7 +10,7 @@
   border: 1px solid var(--lessdarkoffwhite);
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.13);
   @media (min-width: 720px) {
-    box-shadow: 0 55px 99px rgba(0, 0, 0, 0.13);
+    box-shadow: var(--lg-hueless-shadow);
     padding: 3rem;
   }
 }

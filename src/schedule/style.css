@@ -292,8 +292,8 @@
   padding: 1.4em;
   position: relative;
   border-radius: 0.4rem;
+  box-shadow: 0 55px 99px -2rem var(--black-a50);
   border: 1px solid var(--lessdarkoffwhite);
-  filter: drop-shadow(5px 10px 16px rgba(0, 0, 0, 0.1));
   color: var(--offblack);
   line-height: 1.33;
   margin-top: 0.5rem;
@@ -320,30 +320,30 @@
 
   &::before {
     content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-
     --size: 0.45rem;
-    --sides: 0.6;
+    --sides: 1.6;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="2" height="1"><path fill="white" d="M0 1l1-1 1 1z"/><path vector-effect="non-scaling-stroke" stroke="%23e8eaed" fill="none" d="M0 1l1-1 1 1"/></svg>');
+    position: absolute;
+    width: calc(var(--size) * var(--sides));
+    height: var(--size);
+    background-size: 100% 100%;
 
-    right: calc(50% - var(--size) / 2);
-    top: calc(var(--size) * -1);
-    border-left: calc(var(--size) * var(--sides)) solid transparent;
-    border-right: calc(var(--size) * var(--sides)) solid transparent;
-    border-bottom: var(--size) solid var(--white);
-
-    @media (min-width: 720px) {
-      top: 1.4em;
-    }
+    right: calc(50% - (var(--size) * var(--sides)) / 2);
+    bottom: 100%;
 
     @media (min-width: 320px) {
-      top: 0.9em;
+      --size: 0.71rem;
+      --sides: 1.2;
+      top: 10px;
       right: 100%;
+      bottom: auto;
+      width: var(--size);
+      height: calc(var(--size) * var(--sides));
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="2"><path fill="white" d="M1 0L0 1l1 1z"/><path vector-effect="non-scaling-stroke" stroke="%23e8eaed" fill="none" d="M1 0L0 1l1 1"/></svg>');
+    }
 
-      border-top: calc(var(--size) * var(--sides)) solid transparent;
-      border-bottom: calc(var(--size) * var(--sides)) solid transparent;
-      border-right: var(--size) solid var(--white);
+    @media (min-width: 720px) {
+      --size: 0.72rem;
     }
   }
 
@@ -431,7 +431,7 @@
     margin-right: 0;
     border-radius: 0.6rem;
     padding: 1.5rem 1.8rem;
-    box-shadow: 0 35px 49px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--lg-hueless-shadow);
     border: 1px solid var(--lessdarkoffwhite);
     font-size: 0.9rem;
   }
