@@ -30,7 +30,8 @@
   }
 
   @media (prefers-color-scheme: dark) {
-    background: none;
+    filter: invert(1) contrast(0.8);
+    background-color: hsl(217 10% 89%);
   }
 }
 
