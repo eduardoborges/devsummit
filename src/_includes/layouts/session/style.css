@@ -129,7 +129,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  padding: 0.4rem 2rem 0.4rem 0.4rem;
+  padding: 0.4rem 2rem 0.4rem 0.5rem;
   border: 1px solid var(--lessdarkoffwhite);
 }
 
@@ -146,15 +146,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  line-height: 1.5em;
+  justify-content: space-around;
+  font-size: 1rem;
 }
 
 .speaker-name {
   font-weight: bold;
-  color: var(--darkgrey);
-  font-size: 0.85rem;
+  text-decoration: none;
 }
 .speaker-title {
-  font-size: 0.64rem;
+  font-size: 0.75em;
 }
