@@ -36,9 +36,9 @@ layout: '/layouts/session/wrapper'
           <li class="{% className sessionCSS, 'speaker' %}">
             <img src="confboxAsset({% speakerAttr collections, speaker, "avatar", "/assets/speakers/default.svg" %})" class="{% className sessionCSS, 'speaker-avatar' %}" alt="">
             <div class="{% className sessionCSS, 'speaker-creds' %}">
-              <div class="{% className sessionCSS, 'speaker-name' %}">{% speakerAttr collections,
+              <a href="#twitter-url" class="{% className sessionCSS, 'speaker-name' %}">{% speakerAttr collections,
                 speaker,
-                "name" %}</div>
+                "name" %}</a>
               <div class="{% className sessionCSS, 'speaker-title' %}">{% speakerAttr collections,
                 speaker,
                 "title" %}</div>
