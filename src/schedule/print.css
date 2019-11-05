@@ -1,0 +1,39 @@
+@page {
+  margin: 2cm;
+  size: 8.5in 11in;
+}
+
+body {
+  zoom: 0.8;
+}
+
+[class*='day'] > [class*='date'],
+[class*='day'] [class*='day-number'] {
+  background-color: #1a73e8;
+}
+
+[class*='meta'],
+[class*='time-line'] {
+  break-inside: avoid;
+}
+
+[class*='header'],
+[class*='root'] {
+  display: none !important;
+}
+
+a,
+[class*='button'],
+[class*='get-updates'],
+[class*='item'],
+[class*='boxed-content'] {
+  box-shadow: none;
+}
+
+[class*='header'],
+[class*='schedule'],
+[class*='topic'],
+[class*='time'],
+[class*='overflow'] {
+  background-color: transparent;
+}
