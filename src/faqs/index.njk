@@ -39,6 +39,26 @@ description: Everything you need to know about Chrome Dev Summit.
   {% css page, contentCSS %}
   {%- set faqCSS = "/faqs/styles.css" -%}
   {% css page, faqCSS %}
+  <section class="{% className contentCSS, 'category' %}">
+    <h1 class="{% className contentCSS, 'category-heading' %}">FAQs</h1>
+    <aside class="{% className contentCSS, 'category-meta' %}">
+      <blockquote>Everything you need to know</blockquote>
+      <p>If your question isn't listed here, please <a href="mailto:chrome-dev-summit@google.com">email us.</a><p>
+    </aside>
+    <div class="{% className contentCSS, 'box' %} {% className contentCSS, 'section' %}">
+      {% for section in collections.faqs %}
+        {% if (loop.index !== 1) %}<hr class="{% className contentCSS, 'divider' %}">{% endif %}
+        <h2 class="{% className contentCSS, 'section-heading' %}"><a href="#{% idify section.title %}">{{ section.title }}</a></h2>
+        <ul>
+          {% for faq in section.items %}
+            {% if (faq.data.title) and (faq.data.title != section.title) %}
+              <li><a href="#{% idify faq.data.title %}">{{ faq.data.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </section>
   {% for section in collections.faqs %}
     <section class="{% className contentCSS, 'category' %}">
       <h1 id="{% idify section.title %}" class="{% className contentCSS, 'category-heading' %}">{{ section.title }}</h1>
